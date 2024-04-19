@@ -6,23 +6,23 @@ body {
 }
 
 .matches {
-    display: flex;
-    flex-direction: row;
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
 
 }
 
 @media only screen and (max-width: 640px) {
     .matches {
-        flex-wrap: wrap;
-        flex-direction: column;
+
+        grid-template-columns: 1fr;
     }
 }
 
 
 .container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     border: 1px black;
     padding: 5px;
     margin: 5px;
@@ -155,7 +155,7 @@ p {
 
 .ipl {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 8fr 1fr;
     gap: 40px;
     margin: 8px;
     content: fixed;
@@ -206,7 +206,10 @@ p {
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    background: transparent;
+    background-color: rgb(18, 16, 16);
+    margin: 8px;
+    background-color: rgb(24, 22, 26);
+    border-radius: 10px;
 }
 
 .sport-logo {
@@ -215,27 +218,30 @@ p {
 }
 
 .sport-logo h1 {
-    margin: 4%;
+    margin-top: 3%;
     margin-left: 10px;
+    font-size: large;
 }
 
 .sport-logo img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     margin-top: 10px;
+    margin-left: 8px;
 
 }
 
 .league {
     display: flex;
     margin: 0%;
-    background-color: rgb(34, 35, 36);
+    background: transparent
 }
 
 .league img {
     width: 20px;
     height: 20px;
     margin-top: 10px;
+    margin-left: 8px;
 }
 
 .league h1 {
@@ -252,4 +258,15 @@ p {
     background-color: aliceblue;
     border-bottom: 7px solid #78b13f;
     border-right: 7px solid #78b13f;
+}
+
+.sports-team {
+    display: flex;
+    flex-direction: row;
+    border: 1px black;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(24, 22, 26);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(115, 116, 113) inset, -2px -2px 5px rgb(115, 116, 113) inset;
 }
