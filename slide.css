@@ -1,0 +1,255 @@
+body {
+    margin: 18px;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.matches {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+@media only screen and (max-width: 640px) {
+    .matches {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 1px black;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(24, 22, 26);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(115, 116, 113) inset, -2px -2px 5px rgb(115, 116, 113) inset;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    border-right: 1px solid black;
+    margin-top: 0px;
+    gap: 6px;
+
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: transparent;
+    content: inherit;
+}
+
+.image {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    background-color: rgb(186, 187, 187);
+    margin-top: 0px;
+    border-radius: 50%;
+
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    font-size: medium;
+    text-align: left;
+    gap: 8px;
+}
+
+
+
+.head ul {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    list-style: none;
+    margin-bottom: 3px;
+    padding: 0px;
+    color: aliceblue;
+    font-size: 10px;
+    border-bottom: 2px solid rgb(127, 122, 122);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 31, 40);
+    padding: 8px;
+    padding-top: 0px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 14px;
+    margin-top: 6px;
+    font-size: small;
+}
+
+.name {
+    font-size: smaller;
+}
+
+.win-loss {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    font-size: 6px;
+    margin-left: 0%;
+    padding-left: 0%;
+    visibility: visible;
+}
+
+@media screen and (max-width: 374px) {
+    .win-loss {
+        visibility: hidden;
+    }
+
+}
+
+.played ul {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    list-style: none;
+    padding: 0px;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+p {
+    margin: 0px;
+    color: aliceblue;
+    font-size: 11px;
+    padding: 0px;
+    border-bottom: 2px solid rgb(127, 122, 122);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(25, 25, 58);
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+}
+
+.ipl {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    margin: 8px;
+    content: fixed;
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    padding: 2px;
+    padding-left: 8px;
+    gap: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.notification img {
+    width: 15px;
+    height: 15px;
+    margin: 0%;
+    margin-top: 2px;
+    padding: 0%;
+}
+
+.hamburger {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: small;
+    color: rgb(225, 220, 220);
+
+
+}
+
+
+
+.note button {
+    border: none;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0%;
+
+}
+
+.sports {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    background: transparent;
+}
+
+.sport-logo {
+    display: flex;
+    margin: 0%;
+}
+
+.sport-logo h1 {
+    margin: 4%;
+    margin-left: 10px;
+}
+
+.sport-logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+
+.league {
+    display: flex;
+    margin: 0%;
+    background-color: rgb(34, 35, 36);
+}
+
+.league img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.league h1 {
+    margin: 4%;
+    margin-left: 10px;
+    font-size: small;
+}
+
+.checkmark {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 5px;
+    width: 2px;
+    background-color: aliceblue;
+    border-bottom: 7px solid #78b13f;
+    border-right: 7px solid #78b13f;
+}
